@@ -1,0 +1,39 @@
+div#gridArea {
+  position: relative;
+  width: 960px;
+  height: 640px;
+  margin: 50px auto;
+  padding: 1px;
+  border: 1px solid black;
+  display: table;
+}
+
+#buttonDiv {
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  position: relative;
+  margin: auto;
+}
+
+table {
+  position: relative;
+  cellspacing: 0;
+  border-collapse: collapse;
+  background-color: black;
+}
+
+tr,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+.cell {
+  background-color: white;
+  border: 1px solid gray;
+}
+
