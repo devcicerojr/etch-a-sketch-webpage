@@ -6,22 +6,18 @@ var cellHeight;
 $(document).ready(function() {
   rowNumber = 16;
   colNumber = 16;
-  cellWidth = ($("div#gridArea").width()) / colNumber;
-  cellHeight = ($("div#gridArea").height()) / rowNumber;
-
   CreateTable();
-
   $("button").click(function() {
     rowNumber = prompt("What is the new cell number on each side?", 16);
     colNumber = rowNumber;
     $("tr").remove();
-    cellWidth = ($("div#gridArea").width()) / colNumber;
-    cellHeight = ($("div#gridArea").height()) / rowNumber;
     CreateTable();
   });
 });
 
 function CreateTable() {
+  cellWidth = ($("div#gridArea").width()) / colNumber;
+  cellHeight = ($("div#gridArea").height()) / rowNumber;
   for (var i = rowNumber; i > 0; i--) {
     $("table").append("<tr id=" + i + "></tr>");
     for (var j = colNumber; j > 0; j--) {
