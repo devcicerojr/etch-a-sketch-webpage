@@ -1,9 +1,14 @@
-var rowNumber = 16;
-var colNumber = 16;
-var cellWidth = ($("div#gridArea").width()) / colNumber;
-var cellHeight = ($("div#gridArea").height()) / rowNumber;
+var rowNumber;
+var colNumber;
+var cellWidth;
+var cellHeight;
 
 $(document).ready(function() {
+  rowNumber = 16;
+  colNumber = 16;
+  cellWidth = ($("div#gridArea").width()) / colNumber;
+  cellHeight = ($("div#gridArea").height()) / rowNumber;
+
   CreateTable();
 
   $("button").click(function() {
